@@ -2,6 +2,9 @@
   info:
   <span class="navbar-brand text-start w-25 text-truncate"></span>
   landing page is a pic of me that blends into the page (with a "Hello i am emil" nexto img)
+
+  hire me eller epost sender epost direkte (form)
+  forskjellige farger for sections
 -->
 <!doctype html>
 <html lang="en">
@@ -20,13 +23,19 @@
     <link href="static/css/style.css" rel="stylesheet" /> <!-- own css -->
     <link href="static/css/bootstrap.css" rel="stylesheet" /> <!-- Bootstrap CSS -->
 
-    <title>Emil Kjenstad | Portfolio</title>
+    <title>Emil Kjenstad</title>
   </head>
   <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
 
     <!-- LANDING -->
-    <section id="">
-      <img src="static/assets/img/landing.png" class="d-block w-100" alt="...">
+    <section class="" >
+      <div id="carouselExampleControls" class="carousel carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img id="thisTest" src="static/assets/img/landing.png" class="d-block w-100" alt="..."></div>
+        </div>
+        <div class="carousel-control-prev" onmouseover="chbg('landing-left')" onmouseout="chbg('landing')""></div>
+        <div class="carousel-control-next" onmouseover="chbg('landing-right')" onmouseout="chbg('landing')"></div>
+      </div>
     </section>
 
     <!-- NAVBAR -->
@@ -61,48 +70,6 @@
         </div>
       </div>
     </nav>
-
-    <!--  -->
-    <section id="sectionLanding">
-      <div class="container">
-        <br>
-        <div class="col">
-          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="static/assets/img/landing_ccac.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="static/assets/img/landing_pitt.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-dark">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-    </section>
 
     <!-- PROJECTS -->
     <section class="page-section container-fluid" id="sectionProject">
@@ -162,36 +129,151 @@
         </div>
 
       </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <ul class="list-group timeline">
+              <li><a data-bs-toggle="list" href="#project-regal" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_regal.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Regal Finance</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">2018-2021</p>
+                  </div>
+                </div>
+              </a></li>
+              <li><a data-bs-toggle="list" href="#project-paws" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_paws.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">PAWS Lab</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      2017-2018
+                    </p>
+                  </div>
+                </div>
+              </a></li>
+              <li><a data-bs-toggle="list" href="#project-metroidvania" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_metroidvania.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Metroidvania</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      2014-2017
+                    </p>
+                  </div>
+                </div>
+              </a></li>
+              <li><a data-bs-toggle="list" href="#project-pathfinder" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon-pathfinder.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">PathFinder</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      2014-2017
+                    </p>
+                  </div>
+                </div>
+              </a></li>
+            </ul>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="tab-content">
+            <div class="tab-pane fade" id="project-regal">
+              <h3>University of Pittsburgh</h3>
+              <p>
+                asadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk da
+              </p>
+              <p>
+                asadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk da
+              </p>
+            </div>
+            <div class="tab-pane fade" id="project-paws">CCAC</div>
+            <div class="tab-pane fade" id="project-metroidvania">labert</div>
+            <div class="tab-pane fade" id="project-pathfinder">asda</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section class="page-section container-fluid" id="sectionExperience">
       <h1 class="text-uppercase">Experience</h1>
 
+      <div class="row">
+        <div class="col-md-8 col-sm-12 order-md-first order-sm-last">
+          <div class="tab-content">
+            <div class="tab-pane fade" id="experience-pitt">
+              <div class="card">
+                <div class="card-header">Quote</div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p><i>"The effort given by the Instructor and the TA, Emil. With everything going with class in the world they are patient with us students and are doing all they can to keep it as engaging and instructive as possible."</i></p>
+                    <footer class="blockquote-footer">Anonymous student at <cite title="Source Title">the University of Pittsburgh</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
 
+              <br>
+              view more
 
-      <h5>University of Pittsburgh</h5>
-      <p>hello</p>
-
-      <h5>University of Pittsburgh</h5>
-      <p>hello</p>
-      <div class="card">
-        <div class="card-header">Quote</div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p><i>"The effort given by the Instructor and the TA, Emil. With everything going with class in the world they are patient with us students and are doing all they can to keep it as engaging and instructive as possible."</i></p>
-            <footer class="blockquote-footer">Anonymous student at <cite title="Source Title">the University of Pittsburgh</cite></footer>
-          </blockquote>
+            </div>
+            <div class="tab-pane fade" id="experience-shadyside">Shadyside</div>
+            <div class="tab-pane fade" id="experience-OV">Oslo Vikings AFC</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 order-md-last order-sm-first">
+          <ul class="list-group timeline timeline-inverted">
+            <li><a data-bs-toggle="list" href="#experience-pitt" class="list-group-item list-group-item-action">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_pitt.png" alt="" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">University of Pittsburgh</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Undergraduate Teaching Assistant</p> <!-- mayb. remove -->
+                  <p class="text-muted">Undergraduate Student Researcher</p>
+                </div>
+              </div>
+            </a></li>
+            <li><a data-bs-toggle="list" href="#experience-shadyside" class="list-group-item list-group-item-action">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_market_district.png" alt="" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Shadyside Market District</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Sales Clerk</p>
+                </div>
+              </div>
+            </a></li>
+            <li><a data-bs-toggle="list" href="#experience-OV" class="list-group-item list-group-item-action">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_OV.png" alt="" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Oslo Vikings AFC</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Assistant Coach
+                  </p>
+                </div>
+              </div>
+            </a></li>
+          </ul>
         </div>
       </div>
-
-      <h5>Shadyside Market District</h5>
-      <p>hello</p>
-
-      <h5>Oslo Vikings AFC</h5>
-      <p>hello</p>
-
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">View Timeline</button>
 
     </section>
 
@@ -201,15 +283,80 @@
       <!-- education -->
       <h5 id="sectionEducation" class="text-center text-lg-end">Education</h5>
 
-      <h5>UNIVERSITY OF PITTSBURGH</h5>
-      <p>hello</p>
-      <h5>COMMUNITY COLLEGE OF ALLEGHENY COUNTY</h5>
-      <p>hello</p>
-      <h5>LAMBERTSETER VIDREGÅENDE SKOLE</h5>
-      <p>hello</p>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <ul class="list-group timeline">
+              <li><a data-bs-toggle="list" href="#education-tbd" class="list-group-item list-group-item-action active">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Undecided</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      ----
+                    </p>
+                  </div>
+                </div>
+              </a></li>
+              <li><a data-bs-toggle="list" href="#education-pitt" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_pitt.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">University of Pittsburgh</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">2018-2021</p>
+                  </div>
+                </div>
+              </a></li>
+              <li><a data-bs-toggle="list" href="#education-ccac" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_ccac.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Community College of Allegheny County</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      2017-2018
+                    </p>
+                  </div>
+                </div>
+              </a></li>
+              <li><a data-bs-toggle="list" href="#education-lambertseter" class="list-group-item list-group-item-action">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_lambertseter.png" alt="" /></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Lambertseter Vidregående Skole</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      2014-2017
+                    </p>
+                  </div>
+                </div>
+              </a></li>
+            </ul>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="education-tbd">TBD</div>
+            <div class="tab-pane fade" id="education-pitt">
+              <h3>University of Pittsburgh</h3>
+              <p>
+                asadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk da
+              </p>
+              <p>
+                asadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk daasadjh ikasj dbjhadb kjgskda jhgdakjshg jkhasg djkhj dkhgjdsk aghdjskag dhakjhgdkjashg djkashg dkjashg dkjga djhasg dkjhasg dkjashdg jkashg dkjashg dkjhasgd jsagkjda hjsad kjgjsk da
+              </p>
+            </div>
+            <div class="tab-pane fade" id="education-ccac">CCAC</div>
+            <div class="tab-pane fade" id="education-lambertseter">labert</div>
+          </div>
+        </div>
+      </div>
 
       <br>
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEducation" aria-controls="offcanvasRight">View Timeline for Education</button>
 
       <h5 id="sectionAaC">Awards & Certificates</h5>
       <p>
@@ -341,130 +488,7 @@
       </div>
     </div>
 
-    <!-- offcanvas-experience -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Experience</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">Undecided</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  ----
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/pitt_icon.png" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">University of Pittsburgh</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">2018-2021</p>
-                <p class="text-muted">UTA</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/ccac_icon.png" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">Community College of Allegheny County</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  2017-2018
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/lambertseter_icon.png" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">Lambertseter Vidregående Skole</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  2014-2017
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- offcanvas-ducation -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasEducation" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Education</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">Undecided</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  ----
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/pitt_icon.png" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">University of Pittsburgh</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">2018-2021</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/ccac_icon.png" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">Community College of Allegheny County</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  2017-2018
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/lambertseter_icon.png" alt="" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="subheading">Lambertseter Vidregående Skole</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  2014-2017
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <script src="static/js/script.js"/></script> <!-- own JavaScript -->
     <script src="static/js/bootstrap.js"/></script> <!-- Bootstrap JavaScript -->
 
   </body>
