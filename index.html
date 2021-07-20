@@ -31,7 +31,8 @@
   <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
 
     <!-- LANDING -->
-    <section class="" >
+      <!--
+      <section class="page-section container-fluid" id="">
       <div id="carouselExampleControls" class="carousel carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active"><img id="thisTest" src="static/assets/img/landing.png" class="d-block w-100" alt="..."></div>
@@ -39,7 +40,17 @@
         <div class="carousel-control-prev" onmouseover="chbg('landing-left')" onmouseout="chbg('landing')""></div>
         <div class="carousel-control-next" onmouseover="chbg('landing-right')" onmouseout="chbg('landing')"></div>
       </div>
-    </section>
+      </section>
+      -->
+      <div class="hero-image">
+        <div class="hero-text position-absolute top-25 start-15">
+          <p>-- Hello</p>
+          <h1 style="font-size:50px">I'm <span class="text-warning">Emil</span> Kjenstad</h1>
+          <p>I am a Computer Scientist with origins from Norway and the United States of America.</p>
+          <a class="text-warning" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
+        </div>
+      </div>
+
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3" id="scrollspy-nav">
@@ -47,8 +58,8 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse justify-content-between align-items-center navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand text-warning" href="#sectionLanding">Emil M. Kjenstad</a>
+        <div class="collapse justify-content-between navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand text-light fst-italic fw-bolder" href="#sectionLanding">Emil M. Kjenstad</a>
           <ul class="nav nav-pills"> <!-- time line somewhere-->
             <li><a class="nav-link" href="#sectionProject">Projects</a></li>
             <li><a class="nav-link" href="#sectionExperience">Experience</a></li>
@@ -68,7 +79,7 @@
           <span>
             <a class="btn btn-dark btn-social" href="https://github.com/EmilKjenstad"><i class="fab fa-github"></i></a>
             <a class="btn btn-dark btn-social" href="https://www.linkedin.com/in/emil-magnar-kjenstad-3a32b6207/"><i class="fab fa-linkedin"></i></a>
-            <a class="btn btn-primary" href="mailto:emil.kjenstad@gmail.com"><i class="fas fa-envelope"></i> Hire Me</a>
+            <a class="btn btn-light" href="mailto:emil.kjenstad@gmail.com"><i class="fas fa-envelope"></i> Hire Me</a>
           </span>
         </div>
       </div>
@@ -76,10 +87,11 @@
 
     <!-- PROJECTS -->
     <section class="page-section container-fluid" id="sectionProject">
+
       <h1 class="text-uppercase">Projects</h1>
 
-      <div class="row">
-        <div class="col-md-4 col-sm-12 bg-white rounded">
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12 bg-white shadow-lg mb-5 rounded p-3" onclick="showContent('contentProject')">
           <ul class="list-group timeline">
               <li><a data-bs-toggle="list" href="#project-regal" class="list-group-item list-group-item-action">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_regal.png" alt="" /></div>
@@ -127,7 +139,8 @@
               </a></li>
             </ul>
         </div>
-        <div class="col-md-8 col-sm-12">
+
+        <div id="contentProject" class="col-md-8 col-sm-12" style="display:none;">
           <div class="tab-content">
             <div class="tab-pane fade" id="project-regal">
               <h5>Regal Finance</h5>
@@ -182,6 +195,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -189,8 +203,8 @@
     <section class="page-section container-fluid" id="sectionExperience">
       <h1 class="text-uppercase">Experience</h1>
 
-      <div class="row">
-        <div class="col-md-8 col-sm-12 order-last order-md-first text-end">
+      <div class="row justify-content-center">
+        <div id="contentExperience" class="col-md-8 col-sm-12 order-last order-md-first text-sm-start text-md-end" style="display:none;">
           <div class="tab-content">
             <div class="tab-pane fade" id="experience-pitt">
               <h5>Undergraduate Teaching Assistant</h5>
@@ -229,7 +243,7 @@
             <div class="tab-pane fade" id="experience-OV">Oslo Vikings AFC</div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 order-first order-md-last bg-white rounded">
+        <div class="col-md-4 col-sm-12 order-first order-md-last bg-white shadow-lg mb-5 rounded p-3" onclick="showContent('contentExperience')">
           <ul class="list-group timeline timeline-inverted">
             <li><a data-bs-toggle="list" href="#experience-pitt" class="list-group-item list-group-item-action">
               <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_pitt.png" alt="" /></div>
@@ -274,16 +288,15 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="page-section container-fluid bg-warning shadow-lg mb-5 rounded" id="sectionEducation">
+    <section class="page-section container-fluid bg-white shadow-lg mb-5 rounded" id="sectionEducation">
       <div class="container border border-5 p-5">
         <h1 class="text-uppercase">Education</h1>
 
-
         <div class="row row-cols-2s row-cols-lg-3 g-4">
-
+          <!-- Pitt -->
           <div class="col">
             <div class="flip-card mx-auto">
-              <div class="flip-card-inner">
+              <div class="flip-card-inner border">
                 <div class="flip-card-front">
                   <img class="card-img-bottom" src="static/assets/img/icon_pitt.png" alt="Regal Finance">
                 </div>
@@ -297,9 +310,10 @@
             </div>
           </div>
 
+          <!-- CCAC -->
           <div class="col">
             <div class="flip-card mx-auto">
-              <div class="flip-card-inner">
+              <div class="flip-card-inner border">
                 <div class="flip-card-front">
                   <img class="card-img-bottom" src="static/assets/img/icon_ccac.png" alt="PAWS Lab">
                 </div>
@@ -313,9 +327,10 @@
             </div>
           </div>
 
+          <!-- Lambertseter Vidregående Skole -->
           <div class="col">
             <div class="flip-card mx-auto">
-              <div class="flip-card-inner">
+              <div class="flip-card-inner border">
                 <div class="flip-card-front">
                   <img class="card-img-bottom" src="static/assets/img/icon_lambertseter.png" alt="Metroidvania">
                 </div>
@@ -323,12 +338,11 @@
                   <h1 class="fs-2 border-bottom border-5 pb-2">Lambertseter Vidregående Skole</h1>
                   <p>Naturvitenskap</p>
                   <p>2014 - 2017</p>
-                  <p>GPA - 3.88 / 6.000</p>
+                  <p>GPA - 3.885 / 6.000</p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -356,21 +370,11 @@
               <img class="mx-auto rounded-circle" src="static/assets/img/profile_image.jpg" alt="" />
               <h4 class="text-uppercase m-0">Emil M. Kjenstad</h4>
               <hr class="my-4 mx-auto" />
-              <!--
-              <div class="small text-black-50">
-                <p class="text-muted">
-                  emk113@pitt.edu<br>
-                  6105 Sennot Square<br>
-                  University of Pittsburgh<br>
-                  Pittsburgh, PA, USA
-                </p>
-              </div>
-            -->
-              <a class="btn btn-primary btn-social mx-2" href="https://github.com/EmilKjenstad"><i class="fab fa-github"></i></a>
-              <a class="btn btn-primary btn-social mx-2" href="https://www.facebook.com/emil.kjenstad/"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-primary btn-social mx-2" href="https://www.instagram.com/emil.kjenstad/"><i class="fab fa-instagram"></i></a>
-              <a class="btn btn-primary btn-social mx-2" href="https://www.linkedin.com/in/emil-magnar-kjenstad-3a32b6207/"><i class="fab fa-linkedin"></i></a>
-              <a class="btn btn-primary btn-social mx-2" href="mailto:emil.kjenstad@gmail.com"><i class="fas fa-envelope"></i></a>
+
+              <a class="btn btn-dark btn-social m-1" href="https://github.com/EmilKjenstad"><i class="fab fa-github"></i></a>
+              <a class="btn btn-dark btn-social m-1" href="https://www.facebook.com/emil.kjenstad/"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-dark btn-social m-1" href="https://www.instagram.com/emil.kjenstad/"><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-dark btn-social m-1" href="https://www.linkedin.com/in/emil-magnar-kjenstad-3a32b6207/"><i class="fab fa-linkedin"></i></a>
             </div>
           </div>
 
@@ -380,7 +384,7 @@
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100 shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <i class="fas fa-map-marked-alt text-dark mb-2"></i>
                             <h4 class="text-uppercase m-0">Address</h4>
                             <hr class="my-4 mx-auto" />
                             <div class="small text-black-50">
@@ -394,7 +398,7 @@
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100 shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <i class="fas fa-envelope text-dark mb-2"></i>
                             <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4 mx-auto" />
                             <div class="small text-black-50">emil.kjenstad@gmail.com</div>
@@ -410,98 +414,6 @@
     <footer class="footer">
         <div class="container">Copyright © Emil Kjenstad 2021</div>
     </footer>
-
-
-    <!-- REGAL FINANCE -->
-    <div class="modal fade" id="modal_regal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Regal Finance</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Our project is called Regal and it is a simple budgeting tool that allows the user to track expenses and plan their financial goals.  The main functionality of the web application will be to allow the user to track income against expenses.  This information will be stored for the user to modify over time.  The user will also be able to track what expenses they deem superfluous in order to separate necessity from wasteful spending. When the user has a surplus of funds,  the application will allow the user to allocate surplus toward planning savings and investments.  Goals for such surplus will be both user defined, and suggested by the app through a few example savings milestones.  The ability to link a bank account to the app will not be supported due to issues with managing project scope as well as issues with security that we may encounter during development.
-            </p>
-            <p>
-              We have chosen this project because of our shared interest in personal finance.  We all have a good idea of what we want to see in a budgeting app, and believe in our ability to create something purposeful.  An advantage of this particular project is that the app can also be subdivided into manageable, modular goals.  These goals can be easily modified to suit any time constraints or requirement changes we encounter along the way.  If we have extra time,  we can supplement the content of the app with useful widgets such as a calculator that approximates income tax,  or one which calculates interest generated by consistent contributions to savings.
-            </p>
-            <p>
-              In creating this application,  standard web development platforms will be utilized.  A front end will be created using HTML, CSS, and JavaScript.   The backend of the app will be managed with scripts utilizing Python, Django, Flask, and SQL for database management.  The abilities of the team are diverse among these tools, so a separation of workflow is starting to become apparent. A management app such as Trello will act as a structure to manage workflow efficiently.
-            </p>
-            <ul class="list-inline">
-                <li>January 2021 - April 2021</li>
-                <li>University of Pittsburgh</li>
-                <li>Computer Engineering</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              <i class="fas fa-times mr-1"></i>
-              Close Project
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PAWS LAB -->
-    <div class="modal fade" id="modal_paws" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Personalized Adaptive Web Systems Lab</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Personalized Adaptive Web Systems Lab was established in 2004 with support from National Science Foundation and the School of Information Sciences at the University of Pittsburgh. The goal of the PAWS Lab is development and evaluation of innovative user- and group-adaptive Web-based technologies, systems, and architectures. The Lab currently explores a range of user modeling, adaptation, and personalization technologies. The work of the Lab is supported by NSF and DARPA funding.
-            </p>
-
-            <ul class="list-inline">
-                <li>May 2020 - December 2020</li>
-                <li>University of Pittsburgh</li>
-                <li>Undergraduate Student Researcher</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              <i class="fas fa-times mr-1"></i>
-              Close Project
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- METROIDVANIA -->
-    <div class="modal fade" id="modal_metroidvania" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Metroidvania</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              A metroidvania with a focus on ranged combat and movement. The weapons and gadgets unlocked compliment the movement system and allows for intricate navigation. Sections of proceduraly generated areas branch predesigned locations for a mix of purposefully designed world design and procedurally generated areas inbetween.
-            </p>
-            <ul class="list-inline">
-                <li>August 2020 - December 2020</li>
-                <li>University of Pittsburgh</li>
-                <li>Game Design & Implementation</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              <i class="fas fa-times mr-1"></i>
-              Close Project
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="static/js/script.js"/></script> <!-- own JavaScript -->
     <script src="static/js/bootstrap.js"/></script> <!-- Bootstrap JavaScript -->
