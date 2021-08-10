@@ -4803,15 +4803,14 @@ textarea.form-control-lg {
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
   text-align: inherit;
-  opacity: 0.5;
+  opacity: 0.50;
 }
 .list-group-item-action:hover, .list-group-item-action:focus {
   z-index: 1;
   color: #495057;
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 1;
 }
 .list-group-item-action:active {
   opacity: 1;
@@ -4839,7 +4838,7 @@ textarea.form-control-lg {
 }
 .list-group-item.active {
   z-index: 2;
-  background-color: #0d6efd; /*selected box color*/
+  background-color: transparent;
   border-color: #0d6efd;
   opacity: 1;
 }

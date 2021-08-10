@@ -31,34 +31,14 @@
   <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
 
     <!-- LANDING -->
-      <!--
-      <section class="page-section container-fluid" id="">
-      <div id="carouselExampleControls" class="carousel carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active"><img id="thisTest" src="static/assets/img/landing.png" class="d-block w-100" alt="..."></div>
-        </div>
-        <div class="carousel-control-prev" onmouseover="chbg('landing-left')" onmouseout="chbg('landing')""></div>
-        <div class="carousel-control-next" onmouseover="chbg('landing-right')" onmouseout="chbg('landing')"></div>
-      </div>
-      </section>
-      <div class="hero-image">
-        <div class="hero-text position-absolute top-25 start-15">
-          <p>-- Hello</p>
-          <h1 style="font-size:50px">I'm <span class="text-warning">Emil</span> Kjenstad</h1>
-          <p>I am a Computer Scientist with origins from Norway and the United States of America.</p>
-          <a class="text-warning" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
-        </div>
-      </div>
-    -->
     <header class="masthead">
         <div class="container">
           <p class="masthead-subheading">&mdash; Hello</p>
-          <p class="masthead-heading text-uppercase">I'm <span class="text-warning">Emil</span> Kjenstad</p>
+          <p class="masthead-heading text-uppercase">I'm <span class="text-dark">Emil</span> Kjenstad</p>
           <p class="masthead-subheading fs-5">I am a Computer Scientist with origins from Norway and the United States of America.</p>
-          <a class="text-warning text-decoration-none" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
+          <a class="text-dark text-decoration-none" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
         </div>
     </header>
-
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3" id="scrollspy-nav">
@@ -89,9 +69,9 @@
       <h1 class="text-uppercase">Projects</h1>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 col-sm-12 bg-white shadow-lg mb-5 rounded p-3" onclick="showContent('contentProject')">
+        <div class="col-md-4 col-sm-12 bg-white shadow-lg mb-5 rounded p-3">
           <ul class="list-group timeline">
-              <li><a data-bs-toggle="list" href="#project-regal" class="list-group-item list-group-item-action">
+              <li><a data-bs-toggle="list" href="#project-regal" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_regal.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -102,7 +82,7 @@
                   </div>
                 </div>
               </a></li>
-              <li><a data-bs-toggle="list" href="#project-paws" class="list-group-item list-group-item-action">
+              <li><a data-bs-toggle="list" href="#project-paws" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_paws.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -113,7 +93,7 @@
                   </div>
                 </div>
               </a></li>
-              <li><a data-bs-toggle="list" href="#project-metroidvania" class="list-group-item list-group-item-action">
+              <li><a data-bs-toggle="list" href="#project-metroidvania" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_metroidvania.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -124,7 +104,7 @@
                   </div>
                 </div>
               </a></li>
-              <li><a data-bs-toggle="list" href="#project-pathfinder" class="list-group-item list-group-item-action">
+              <li><a data-bs-toggle="list" href="#project-pathfinder" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon-pathfinder.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -138,7 +118,7 @@
             </ul>
         </div>
 
-        <div id="contentProject" class="col-md-8 col-sm-12" style="display:none;">
+        <div id="contentProject" class="col-md-8 col-sm-12 hidden visuallyhidden">
           <div class="tab-content">
             <div class="tab-pane fade" id="project-regal">
               <h5>Regal Finance</h5>
@@ -183,10 +163,10 @@
             <div class="tab-pane fade" id="project-pathfinder">
               <h5>PathFinder</h5>
               <p>
-                Sample text.
+                PathFinder is an educational web application made sometime during senior year of High School. It was a class project where each student was to create their own game from scratch. In PathFinder, you take control over the main character that is stuck inside a Labirinth where there is no way out. Upon traversing the labirinth, you discover multiple NPC's. Each NPC asks a different question where the player must get all questions correct before being able to escape the labirinth.
               </p>
               <ul class="list-inline">
-                  <li>August 2020 - December 2020</li>
+                  <li>August 2016 - May 2017</li>
                   <li>Lambertseter Vgs</li>
                   <li>Informasjonsteknologi</li>
               </ul>
@@ -202,10 +182,15 @@
       <h1 class="text-uppercase">Experience</h1>
 
       <div class="row justify-content-center">
-        <div id="contentExperience" class="col-md-8 col-sm-12 order-last order-md-first text-sm-start text-md-end" style="display:none;">
+        <div id="contentExperience" class="col-md-8 col-sm-12 order-last order-md-first text-sm-start text-md-end hidden visuallyhidden">
           <div class="tab-content">
+            <!-- PITT -->
             <div class="tab-pane fade" id="experience-pitt">
               <h5>Undergraduate Teaching Assistant</h5>
+              <p class="text-muted">August 2020 - May 2021</p>
+              <p>
+                I served as a UTA for two semesters at the University of Pittsburgh. In this position, i was asked to help students with any questions they had about the class or any assignments. Additionally, we were asked to proctoring our own classes and handle any additional work that was associated with this. This includes creating solutions to lab assignments, create problems for the students to solve, and more.
+              </p>
               <div class="card">
                 <div class="card-header">Quote</div>
                 <div class="card-body">
@@ -217,33 +202,32 @@
               </div>
 
               <h5 class="mt-5">Undergraduate Student Researcher</h5>
-              <br>
-              view more
+              <p class="text-muted">May 2020 - December 2020</p>
+              <p>
+                I compleated my capstone project under the supervision of Professor Brusilovsky at the University of Pittsburgh. In this project, I was tasked with the back-end and front-end development for their student analytics dashboard. I worked closely with PhD Student Jordan Barria-Pineda with finding the most optimal way of displaying data to the user for the interactive dashboard which was to be displayed to the user of the application. In this project, I was able to put my knowledge of programming and CS into work, creating this application from scratch (outisde an already established database). In this project, I creating an application using REST-API that connected their database to the back-end, which then would pass the processed data to the front-end. By the end of 2020, all Professors associated with the project agreed that my work was worth the highest grade.
+              </p>
 
             </div>
             <div class="tab-pane fade" id="experience-shadyside">
-              <h5>Shadyside Market District</h5>
+              <h5>Sales Clerk</h5>
+              <p class="text-muted">February 2017 - April 2021</p>
               <p>
-                Our project is called Regal and it is a simple budgeting tool that allows the user to track expenses and plan their financial goals.  The main functionality of the web application will be to allow the user to track income against expenses.  This information will be stored for the user to modify over time.  The user will also be able to track what expenses they deem superfluous in order to separate necessity from wasteful spending. When the user has a surplus of funds,  the application will allow the user to allocate surplus toward planning savings and investments.  Goals for such surplus will be both user defined, and suggested by the app through a few example savings milestones.  The ability to link a bank account to the app will not be supported due to issues with managing project scope as well as issues with security that we may encounter during development.
+                Description
               </p>
-              <p>
-                We have chosen this project because of our shared interest in personal finance.  We all have a good idea of what we want to see in a budgeting app, and believe in our ability to create something purposeful.  An advantage of this particular project is that the app can also be subdivided into manageable, modular goals.  These goals can be easily modified to suit any time constraints or requirement changes we encounter along the way.  If we have extra time,  we can supplement the content of the app with useful widgets such as a calculator that approximates income tax,  or one which calculates interest generated by consistent contributions to savings.
-              </p>
-              <p>
-                In creating this application,  standard web development platforms will be utilized.  A front end will be created using HTML, CSS, and JavaScript.   The backend of the app will be managed with scripts utilizing Python, Django, Flask, and SQL for database management.  The abilities of the team are diverse among these tools, so a separation of workflow is starting to become apparent. A management app such as Trello will act as a structure to manage workflow efficiently.
-              </p>
-              <ul class="list-inline">
-                  <li>January 2021 - April 2021</li>
-                  <li>University of Pittsburgh</li>
-                  <li>Computer Engineering</li>
-              </ul>
             </div>
-            <div class="tab-pane fade" id="experience-OV">Oslo Vikings AFC</div>
+            <div class="tab-pane fade" id="experience-OV">
+              <h5>Assistant Coach</h5>
+              <p class="text-muted">August 2015 - February 2016</p>
+              <p>
+                Description
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 order-first order-md-last bg-white shadow-lg mb-5 rounded p-3" onclick="showContent('contentExperience')">
+
+        <div class="col-md-4 col-sm-12 order-first order-md-last bg-white shadow-lg mb-5 rounded p-3">
           <ul class="list-group timeline timeline-inverted">
-            <li><a data-bs-toggle="list" href="#experience-pitt" class="list-group-item list-group-item-action">
+            <li><a data-bs-toggle="list" href="#experience-pitt" class="list-group-item list-group-item-action" onclick="showContent('contentExperience')">
               <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_pitt.png" alt="" /></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -255,7 +239,7 @@
                 </div>
               </div>
             </a></li>
-            <li><a data-bs-toggle="list" href="#experience-shadyside" class="list-group-item list-group-item-action">
+            <li><a data-bs-toggle="list" href="#experience-shadyside" class="list-group-item list-group-item-action" onclick="showContent('contentExperience')">
               <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_market_district.png" alt="" /></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -266,7 +250,7 @@
                 </div>
               </div>
             </a></li>
-            <li><a data-bs-toggle="list" href="#experience-OV" class="list-group-item list-group-item-action">
+            <li><a data-bs-toggle="list" href="#experience-OV" class="list-group-item list-group-item-action" onclick="showContent('contentExperience')">
               <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_OV.png" alt="" /></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -290,7 +274,25 @@
       <div class="container border border-5 p-5">
         <h1 class="text-uppercase">Education</h1>
 
-        <div class="row row-cols-2s row-cols-lg-3 g-4">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+
+          <!-- Master -->
+          <div class="col">
+            <div class="flip-card mx-auto">
+              <div class="flip-card-inner border">
+                <div class="flip-card-front">
+                  <img class="card-img-bottom" src="static/assets/img/card_uio.png" alt="Regal Finance">
+                </div>
+                <div class="flip-card-back bg-white">
+                  <h1 class="text-white fs-2 border-bottom border-5 pb-2" style="background-color:#ed1c24;">Universitetet i Oslo</h1>
+                  <p>MS in Computer Science</p>
+                  <p>2021 - Present</p>
+                  <p>GPA - x.xxx / x.xxx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Pitt -->
           <div class="col">
             <div class="flip-card mx-auto">
@@ -332,9 +334,9 @@
                 <div class="flip-card-front">
                   <img class="card-img-bottom" src="static/assets/img/icon_lambertseter.png" alt="Metroidvania">
                 </div>
-                <div class="flip-card-back text-dark" style="background-color:white;">
+                <div class="flip-card-back bg-white">
                   <h1 class="fs-2 border-bottom border-5 pb-2">Lambertseter Vidregående Skole</h1>
-                  <p>Naturvitenskap</p>
+                  <p>Natural Science & Mathematics Studies</p>
                   <p>2014 - 2017</p>
                   <p>GPA - 3.885 / 6.000</p>
                 </div>

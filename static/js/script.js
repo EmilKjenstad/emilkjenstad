@@ -3,5 +3,8 @@ function chbg(img) {
 }
 
 function showContent(selector) {
-  document.getElementById(selector).style.display = "inline-block";
+  document.getElementById(selector).classList.remove('hidden');
+  setTimeout(function () {
+      document.getElementById(selector).classList.remove('visuallyhidden');
+    }, 20);
 }

@@ -2,10 +2,10 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/landing.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/img/landing.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: right center;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
@@ -299,4 +299,17 @@ header.masthead .masthead-heading {
   border-color: #64a19d;
   border-width: 0.25rem;
   width: 3rem;
+}
+
+/* Hide elements */
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+#contentExperience, #contentProject {
+  transition: opacity 0.15s linear;
 }
