@@ -8,6 +8,8 @@
 
   mayb. have timeline as default (each side) when nothing is selected.
   once something is selected, it moves to the side
+
+  publication for master oppgave???
 -->
 <!doctype html>
 <html lang="en">
@@ -65,13 +67,12 @@
 
     <!-- PROJECTS -->
     <section class="page-section container-fluid" id="sectionProject">
-
       <h1 class="text-uppercase">Projects</h1>
 
       <div class="row justify-content-center">
         <div class="col-md-4 col-sm-12 bg-white shadow-lg mb-5 rounded p-3">
           <ul class="list-group timeline">
-              <li><a data-bs-toggle="list" href="#project-regal" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
+              <li><a data-bs-toggle="list" href="#project-regal" class="list-group-item list-group-item-action active">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_regal.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -82,7 +83,7 @@
                   </div>
                 </div>
               </a></li>
-              <li><a data-bs-toggle="list" href="#project-paws" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
+              <li><a data-bs-toggle="list" href="#project-paws" class="list-group-item list-group-item-action">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_paws.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -93,7 +94,7 @@
                   </div>
                 </div>
               </a></li>
-              <li><a data-bs-toggle="list" href="#project-metroidvania" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
+              <li><a data-bs-toggle="list" href="#project-metroidvania" class="list-group-item list-group-item-action">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/card_metroidvania.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -104,7 +105,7 @@
                   </div>
                 </div>
               </a></li>
-              <li><a data-bs-toggle="list" href="#project-pathfinder" class="list-group-item list-group-item-action" onclick="showContent('contentProject')">
+              <li><a data-bs-toggle="list" href="#project-pathfinder" class="list-group-item list-group-item-action">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon-pathfinder.png" alt="" /></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -118,9 +119,9 @@
             </ul>
         </div>
 
-        <div id="contentProject" class="col-md-8 col-sm-12 hidden visuallyhidden">
+        <div id="contentProject" class="col-md-8 col-sm-12">
           <div class="tab-content">
-            <div class="tab-pane fade" id="project-regal">
+            <div class="tab-pane fade active show" id="project-regal">
               <h5>Regal Finance</h5>
               <p>
                 Our project is called Regal and it is a simple budgeting tool that allows the user to track expenses and plan their financial goals.  The main functionality of the web application will be to allow the user to track income against expenses.  This information will be stored for the user to modify over time.  The user will also be able to track what expenses they deem superfluous in order to separate necessity from wasteful spending. When the user has a surplus of funds,  the application will allow the user to allocate surplus toward planning savings and investments.  Goals for such surplus will be both user defined, and suggested by the app through a few example savings milestones.  The ability to link a bank account to the app will not be supported due to issues with managing project scope as well as issues with security that we may encounter during development.
@@ -182,10 +183,51 @@
       <h1 class="text-uppercase">Experience</h1>
 
       <div class="row justify-content-center">
-        <div id="contentExperience" class="col-md-8 col-sm-12 order-last order-md-first text-sm-start text-md-end hidden visuallyhidden">
+        <div class="col-md-4 col-sm-12 bg-white shadow-lg mb-5 rounded p-3">
+          <ul class="list-group timeline">
+            <li><a data-bs-toggle="list" href="#experience-pitt" class="list-group-item list-group-item-action active">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_pitt.png" alt="" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">University of Pittsburgh</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Undergraduate Teaching Assistant</p> <!-- mayb. remove -->
+                  <p class="text-muted">Undergraduate Student Researcher</p>
+                </div>
+              </div>
+            </a></li>
+            <li><a data-bs-toggle="list" href="#experience-shadyside" class="list-group-item list-group-item-action">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_market_district.png" alt="" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Shadyside Market District</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Sales Clerk</p>
+                </div>
+              </div>
+            </a></li>
+            <li><a data-bs-toggle="list" href="#experience-OV" class="list-group-item list-group-item-action">
+              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_OV.png" alt="" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Oslo Vikings AFC</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Assistant Coach
+                  </p>
+                </div>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+
+        <div id="contentExperience" class="col-md-8 col-sm-12">
           <div class="tab-content">
             <!-- PITT -->
-            <div class="tab-pane fade" id="experience-pitt">
+            <div class="tab-pane fade active show" id="experience-pitt">
               <h5>Undergraduate Teaching Assistant</h5>
               <p class="text-muted">August 2020 - May 2021</p>
               <p>
@@ -225,46 +267,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 order-first order-md-last bg-white shadow-lg mb-5 rounded p-3">
-          <ul class="list-group timeline timeline-inverted">
-            <li><a data-bs-toggle="list" href="#experience-pitt" class="list-group-item list-group-item-action" onclick="showContent('contentExperience')">
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_pitt.png" alt="" /></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="subheading">University of Pittsburgh</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Undergraduate Teaching Assistant</p> <!-- mayb. remove -->
-                  <p class="text-muted">Undergraduate Student Researcher</p>
-                </div>
-              </div>
-            </a></li>
-            <li><a data-bs-toggle="list" href="#experience-shadyside" class="list-group-item list-group-item-action" onclick="showContent('contentExperience')">
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_market_district.png" alt="" /></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="subheading">Shadyside Market District</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Sales Clerk</p>
-                </div>
-              </div>
-            </a></li>
-            <li><a data-bs-toggle="list" href="#experience-OV" class="list-group-item list-group-item-action" onclick="showContent('contentExperience')">
-              <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/icon_OV.png" alt="" /></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="subheading">Oslo Vikings AFC</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                    Assistant Coach
-                  </p>
-                </div>
-              </div>
-            </a></li>
-          </ul>
-        </div>
+        
       </div>
 
     </section>
@@ -276,7 +279,7 @@
 
         <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4">
 
-          <!-- Master -->
+          <!-- UiO -->
           <div class="col">
             <div class="flip-card mx-auto">
               <div class="flip-card-inner border">
@@ -287,7 +290,7 @@
                   <h1 class="text-white fs-2 border-bottom border-5 pb-2" style="background-color:#ed1c24;">Universitetet i Oslo</h1>
                   <p>MS in Computer Science</p>
                   <p>2021 - Present</p>
-                  <p>GPA - x.xxx / x.xxx</p>
+                  <p>GPA - 4.167 / 5.000</p>
                 </div>
               </div>
             </div>
@@ -319,7 +322,7 @@
                 </div>
                 <div class="flip-card-back bg-white">
                   <h1 class="text-white fs-3 border-bottom border-5 pb-2" style="background-color:#ab1e2e;">Community College of Allegheny County</h1>
-                  <p>Undecided</p>
+                  <p>General Education</p>
                   <p>2017 - 2018</p>
                   <p>GPA - 4.000 / 4.000</p>
                 </div>
