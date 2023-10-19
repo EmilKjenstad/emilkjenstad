@@ -1,3 +1,113 @@
+#bio_container > p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  margin: 10px 0 0 10px;
+}
+
+#bio_container {
+  padding: 5vw;
+  width: 75vw;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.bio_entry {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+.bio_col {
+  width: 50%;
+  padding: 3rem;
+}
+
+
+
+.bio_entry:nth-child(even) {
+}
+
+.bio_entry {
+}
+
+#bio_container > .bio_entry:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+#bio_container > .bio_entry:nth-child(odd) > .bio_col:first-child {
+  border-left: solid 1px black;
+}
+
+#bio_container > .bio_entry:nth-child(even) > .bio_col:first-child {
+  border-right: solid 1px black;
+}
+
+
+
+
+.card-body-content {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.card-body-content-active {
+  overflow: visible;
+  height: 100%;
+  display: block;
+}
+
+.parallax {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/card_uio.png");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* control the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.page-section h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.page-section h3.section-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+.contact_img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
@@ -83,30 +193,6 @@ header.masthead .masthead-heading {
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
-}
-
-.page-section {
-  padding: 6rem 0;
-}
-
-.page-section h1 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.page-section h2.section-heading {
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.page-section h3.section-subheading {
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: italic;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
 }
 
 .footer {
