@@ -21,11 +21,36 @@ Dummy
 `
 
 
+let publications = [
+    {
+        title: "Master of Puppets - How to trick the human mind to explore an infinite world",
+        link: "https://www.duo.uio.no/handle/10852/103876?locale-attribute=en",
+        abstract: `
+            Virtual reality is a simulation of a threedimensional environment with which we can interact as if it were the real environment. With this technology, users can disconnect themselves from the real environment and enjoy a computer-generated world that seems real. This comes with some flaws, however. For example, a user often employs a joystick or omni-directional treadmill to move around in the virtual environment. Many experience this as either an unnatural form of movement that disconnects us from the virtual world or to be expensive and may not be affordable for everyone. An inexpensive solution that feels natural is therefore desired. The most natural form of movement would be walking, but even this has its limitations since issues such as unknowingly walking into walls or other objects can become significant safety risks in the real environment. Moreover, movement in the virtual environment would be limited to what we have available in the real environment because movements are mapped between the virtual and physical environments as 1:1 — whatever you do in the real environment, you do in the virtual environment.
+            Redirected walking is a term used to describe the remapping of position and orientation between the real environment and the virtual environment. If this is done correctly, we can expand the available area in which we can explore a virtual environment. This is done by manipulating human senses to make a person perceive their movements in the virtual environment as ones they are performing in the real environment. We can achieve this by manipulating the camera in the virtual environment by injecting unnoticeable movements that redirect the user. We have emphasized three known methods of redirection in our research, namely, translation, rotation, and curvature. Our aim was to explore the extent to which redirected walking is achievable in various situations without it becoming noticed by users.
+        `
+    },
+    {
+        title: "Experiencing Rotation and Curvature Gain for Redirected Walking in Virtual Reality",
+        link: "https://dl.acm.org/doi/10.1145/3592834.3592874",
+        abstract: `
+            The proliferation of virtual reality (VR) interaction in the wake of the Metaverse trend will place an increasing number of applications and services into virtual environments (VEs). Over the recent years, interactions with the VE have been studied intensely, but very frequently, such interactions are focused on stationary users or users who leverage specialized contraptions to act in the VE (e.g., omni-directional treadmills). The free movement in the VE tends to be achieved by controller input, which creates a huge hurdle to enter and act in it in a natural manner. The target of this study is the translation of the natural walking motion from the real environment (RE) into the VE. In particular, we aim to explore to which extent redirected walking (RW) is achievable without being noticed by the users. Towards this goal, we test two RW methods, i.e., rotation gain and curvature gain. According to the responses of the participants in our study, we find that there is a statistically significant difference with 90% confidence between the levels of gains for rotation gain. On the other hand, levels of gains for curvature gain are not noticeable (i.e., no statistically significant difference is observed).
+        `
+    },
+]
+
 // static/assets/img/...
 let projects = [
-    {title: "Redirected Walking", text: rdw_txt, img:"card_uio.png", from: "January 2021", to: "April 2021"},
+    {title: "Redirected Walking", text: rdw_txt, img:"RW_project.jpg", from: "January 2021", to: "April 2021"},
     {title: "Regal Finance", text: regal_txt, img:"card_regal.png"},
-    {title: "PAWS Lab", text: paws_txt, img:"card_paws.png", from: "May 2020", to: "December 2020"},
+    {title: "PAWS Lab", text: paws_txt, img:"PAWS_logo.png", from: "May 2020", to: "December 2020"},
     {title: "Metroidvania", text: metroid_txt, img:"card_metroidvania.png", from: "August 2020", to: "December 2020"},
     {title: "PathFinder", text: pathfinder_txt, img:"PathFinder.jpg", from: "August 2016", to: "May 2017"},
+]
+
+let education = [
+    {school: "University of Oslo", degree: "M.Sc.", major: "Programming and System Architecture", from: "2021", to: "2023", gpa: "4.583 / 5.000", img: "card_uio.png"},
+    {school: "University of Pittsburgh", degree: "B.Sc.", major: "Computer Science", from: "2018", to: "2021", gpa: "3.755 / 4.000", img: "icon_pitt.png"},
+    {school: "Community College of Allegheny County", degree: "N/A", major: "N/A", from: "2017", to: "2018", gpa: "4.000 / 4.000", img: "icon_ccac.png"},
+    {school: "Lambertseter Vidregående Skole", degree: "High School Diploma", major: "Natural Science and Mathmatics Studies", from: "2014", to: "2017", gpa: "3.885 / 6.000", img: "icon_lambertseter.png"},
 ]

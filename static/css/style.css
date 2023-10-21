@@ -42,7 +42,9 @@
   border-right: solid 1px black;
 }
 
-
+.card-footer > button {
+  float: right;
+}
 
 
 .card-body-content {
@@ -112,7 +114,7 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/img/landing.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.25)), url("../assets/img/landing.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: right center;
