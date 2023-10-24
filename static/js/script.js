@@ -1,28 +1,11 @@
-function chbg(img) {
-  document.getElementById("thisTest").src = "./static/assets/img/"+img+".png";
-}
-
-function showContent(selector) {
-  var toggleClass = 'card-body-content-active';
-  var location = document.getElementById(selector);
-  var hasClass = location.classList.contains(toggleClass);
-
-  if ( !hasClass ) {
-    document.getElementById("btn_"+selector).innerHTML = "Show less";
-    location.classList.add(toggleClass);
-  } 
-  else {
-    location.classList.remove(toggleClass);
-    document.getElementById("btn_"+selector).innerHTML = "Show more";
-  }
-}
-
 // load on demand??
 window.onload = function () {
-  populateProjects();
-  populateEducation();
-  populatePublications();
+    populateProjects();
+    populateEducation();
+    populatePublications();
+    populateExperience();
 }
+
 
 function populateEducation() {
   education.forEach(school => {
@@ -30,21 +13,23 @@ function populateEducation() {
     let card = `
       <div class="col">
         <div class="flip-card mx-auto">
-          <div class="flip-card-inner border">
+          <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img class="card-img-bottom" src="static/assets/img/`+school.img+`" alt="...">
+              <img src="static/assets/img/`+school.img+`" alt="...">
             </div>
             <div class="flip-card-back bg-white">
               <h1 class=" fs-3 border-bottom border-5 pb-2 bg-light">`+school.school+`</h1>
-              <p>`+school.degree+`</p>
-              <p>`+school.major+`</p>
-              <p>`+school.from+` - `+school.to+`</p>
-              <p>GPA - `+school.gpa+`</p>
+              <h5>`+school.degree+`</h5>
+              <p class="text-muted">`+school.major+`</p>
+              <hr class="w-50 mx-auto">
+              <p class="mb-0">`+school.from+` - `+school.to+`</p>
+              <p class="">GPA - `+school.gpa+`</p>
             </div>
           </div>
         </div>
       </div>
     `
+
     document.querySelector("#education_content").innerHTML += card;
   });
 
@@ -70,6 +55,7 @@ function populateProjects() {
         <img src="static/assets/img/`+ projects[i].img +`" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">`+ projects[i].title +`</h5>
+          <p class="text-muted">`+ projects[i].from +` - `+ projects[i].to +`</p>
           <div id="project_content`+i+`" class="card-body-content">`+desc+`</div>
         </div>
         <div class="card-footer">
@@ -96,7 +82,8 @@ function populatePublications() {
         desc += '</p>'
       }
     });
-//collapse show != collapsed
+    
+    //collapse show != collapsed
     let item = `
     <div class="accordion-item">
       <h2 class="accordion-header" id="publication`+i+`">
@@ -117,9 +104,28 @@ function populatePublications() {
 
 }
 
+function populateExperience() {
+  var left = true;
 
+  experiences.forEach(exp => {
+    var side = left ? "left" : "right";
 
+    let entry = `
+      <div class="timeline_event `+ side +`">
+        <div class="content shadow-lg">
+          <h2>`+exp.title+`</h2>
+          <h5 class="text-muted">`+exp.location+`
+            <small>(`+exp.time+`)</small>
+          </h5>
+        </div>
+      </div>
+    `
 
+    left = !left;
+
+    document.querySelector("#timeline_content").innerHTML += entry;
+  });
+}
 
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
@@ -128,8 +134,9 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   var project = projects[id];
   
   // Update the modal's content.
-  var modalTitle = exampleModal.querySelector('.modal-title')
-  var modalBodyInput = exampleModal.querySelector('.modal-body')
+  var modalTitle = exampleModal.querySelector('#exampleModalLabel')
+  var modalBodyInput = exampleModal.querySelector('#modal_content')
+  var modalImage = exampleModal.querySelector('#model_image')
 
   let lines = project.text.split("\n");
   var content = "";
@@ -139,7 +146,10 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
     content += line;
     content += '</p>'
   });
-
-  modalTitle.textContent = project.title;
+  var title = "";
+  title += '<h5 class="modal-title">'+project.title+'</h5>';
+  title += '<small class="text-muted">'+project.from+' - '+project.to+'</small>';
+  //modalImage.src = "static/assets/img/"+project.img;
+  modalTitle.innerHTML = title;
   modalBodyInput.innerHTML = content;
 })

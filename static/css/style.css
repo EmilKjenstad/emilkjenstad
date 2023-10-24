@@ -1,3 +1,17 @@
+.contact-card {
+  width: auto;
+}
+
+@media (min-width: 1200px) {
+  .contact-card {
+    width: 60%;
+  }
+}
+.gradientImg {
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 75%,rgba(255, 255, 255, 0.9));
+  -webkit-mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 75%,rgba(255, 255, 255, 0.9));
+}
+
 #bio_container > p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.25rem;
@@ -22,8 +36,6 @@
   padding: 3rem;
 }
 
-
-
 .bio_entry:nth-child(even) {
 }
 
@@ -46,6 +58,15 @@
   float: right;
 }
 
+@media (max-width: 768px) {
+  #bio_container {
+    width: 100vw;
+  }
+  #bio_container > p {
+    font-size: 1rem;
+  }
+}
+
 
 .card-body-content {
   width: 100%;
@@ -65,17 +86,13 @@
 .parallax {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/card_uio.png");
 
-  /* Set a specific height */
-  min-height: 100vh;
+  min-height: auto; /* Set a specific height */
 
-  /* control the parallax scrolling effect */
-  background-attachment: fixed;
+  background-attachment: fixed; /* control the parallax scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 .page-section h1 {
   margin-top: 0;
@@ -101,15 +118,17 @@
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
 
+.modal-body > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
 
-
-
-
-
-
-
+/* HEADER */
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
@@ -154,15 +173,18 @@ header.masthead .masthead-heading {
   }
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* Card flips */
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-/* This container is needed to position the front and back side */
+.flip-card img {
+  width: 100%;
+  height: 100%;
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -170,14 +192,13 @@ header.masthead .masthead-heading {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -186,8 +207,7 @@ header.masthead .masthead-heading {
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
+.flip-card-front { /* Style the front side (fallback if image is missing) */
   background-color: #bbb;
   color: black;
 }
@@ -197,24 +217,11 @@ header.masthead .masthead-heading {
   transform: rotateY(180deg);
 }
 
+/* OTHER */
 .footer {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.team-member {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.team-member img {
-  width: 14rem;
-  height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
-}
-.team-member h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
 }
 
 .btn-social {
@@ -226,162 +233,6 @@ header.masthead .masthead-heading {
   padding: 0;
   border-radius: 100%;
 }
-
-/*TIMELINE*/
-.timeline {
-  position: relative;
-  padding: 0;
-  list-style: none;
-}
-.timeline:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 40px;
-  width: 2px;
-  margin-left: -1.5px;
-  content: "";
-  background-color: #e9ecef;
-}
-
-.timeline > li {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 50px;
-}
-.timeline > li:after, .timeline > li:before {
-  display: table;
-  content: " ";
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li .timeline-panel {
-  position: relative;
-  float: left;
-  width: 100%;
-  padding: 0 20px 0 100px;
-  text-align: left;
-}
-.timeline > li .timeline-panel:before {
-  right: auto;
-  left: -15px;
-  border-right-width: 15px;
-  border-left-width: 0;
-}
-.timeline > li .timeline-panel:after {
-  right: auto;
-  left: -14px;
-  border-right-width: 14px;
-  border-left-width: 0;
-}
-.timeline > li .timeline-image {
-  position: absolute;
-  z-index: 100;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  margin-left: 0;
-  text-align: center;
-  color: white;
-  border: 7px solid #e9ecef;
-  border-radius: 100%;
-  background-color: lightgray;
-}
-.timeline > li .timeline-image h4 {
-  font-size: 10px;
-  line-height: 14px;
-  margin-top: 12px;
-}
-.timeline > li:last-child {
-  margin-bottom: 0;
-}
-.timeline .timeline-heading h4 {
-  margin-top: 0;
-  color: inherit;
-}
-.timeline .timeline-heading h4.subheading {
-  text-transform: none;
-}
-.timeline .timeline-body > ul,
-.timeline .timeline-body > p {
-  margin-bottom: 0;
-}
-
-/*
-@media (min-width: 768px) {
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline > li {
-    min-height: 100px;
-    margin-bottom: 100px;
-  }
-  .timeline > li .timeline-panel {
-    float: left;
-    width: 41%;
-    padding: 0 20px 20px 30px;
-    text-align: right;
-  }
-  .timeline > li .timeline-image {
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    line-height: 18px;
-    margin-top: 16px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-    padding: 0 30px 20px 20px;
-    text-align: left;
-  }
-}
-
-@media (min-width: 992px) {
-  .timeline > li {
-    min-height: 150px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
-  }
-  .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 30px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .timeline > li {
-    min-height: 170px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
-  }
-  .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
-  }
-  .timeline > li .timeline-image h4 {
-    margin-top: 40px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
-  }
-}
-*/
 
 #sectionContact .card hr {
   border-color: #64a19d;
@@ -398,6 +249,152 @@ header.masthead .masthead-heading {
   opacity: 0;
 }
 
+
+
+
 #contentExperience, #contentProject {
   transition: opacity 0.15s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TIMELINE */
+.timeline { /* The actual timeline (the vertical ruler) */
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.timeline::after { /* The actual timeline (the vertical ruler) */
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline_event { /* Container around content */
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline_event::after { /* The circles on the timeline */
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #0d6efd;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left { /* Place the container to the left */
+  left: 0;
+}
+
+.timeline > .right { /* Place the container to the right */
+  left: 50%;
+}
+
+.left::before { /* Add arrows to the left container (pointing right) */
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline > .right::before { /* Add arrows to the right container (pointing left) */
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline > .right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    width: 100%;
+  }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media (max-width: 1200px) {
+
+  .timeline::after { /* Place the timelime to the left */
+    left: 31px;
+  }
+  
+  .timeline_event { /* Full-width containers */
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline > .timeline_event::before { /* Make sure that all arrows are pointing leftwards */
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .timeline > .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .timeline > .right {
+    left: 0%;
+  }
 }

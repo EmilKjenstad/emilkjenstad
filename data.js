@@ -17,7 +17,10 @@ PathFinder is an educational web application made sometime during senior year of
 `
 
 let rdw_txt = `
-Dummy
+    A group research project on how we can expand the space we can explore in virtual reality when using free motion in the physical space. We achieved this by manipulating human sensory inputs, so the user observed their movements to be real, but their movements between the physical space and virtual space are different.
+    Developed a system that manipulates human senses to observe their surroundings as larger than what they really are using virtual reality.
+    In charge of creating the various immersive virtual environments for the user to experience.
+    Co-developed the software that manipulated user movements between the two environments, to achieve redirection.
 `
 
 
@@ -39,18 +42,46 @@ let publications = [
     },
 ]
 
+const dhis2_txt = `
+    DHIS2 is a leading health management information system (HMIS) platform, in use by 80 low and middle-income countries. Approximately 3.2 billion people live in countries where DHIS2 is used.
+    DHIS2 asked the students at University of Oslo to create a new feature for their platform based on user stories. Examples of such stories are familiarity with paper version, internet connectivity, and difficulties knowing if a document is submitted. Our group created a data entry form takes such stories into account.
+    I was tasked with developing the interface that retrieved already submitted forms and displaying them in an orderly fashion to the user to view.
+`
+
 // static/assets/img/...
 let projects = [
-    {title: "Redirected Walking", text: rdw_txt, img:"RW_project.jpg", from: "January 2021", to: "April 2021"},
-    {title: "Regal Finance", text: regal_txt, img:"card_regal.png"},
+    {title: "Redirected Walking", text: rdw_txt, img:"RW_project.jpg", from: "January 2022", to: "June 2023"},
+    {title: "DHIS2", text: dhis2_txt, img:"DHIS2_logo.png", from: "August 2021", to: "November 2021"},
+    {title: "Regal Finance", text: regal_txt, img:"card_regal.png", from: "January 2021", to: "May 2021"},
     {title: "PAWS Lab", text: paws_txt, img:"PAWS_logo.png", from: "May 2020", to: "December 2020"},
     {title: "Metroidvania", text: metroid_txt, img:"card_metroidvania.png", from: "August 2020", to: "December 2020"},
     {title: "PathFinder", text: pathfinder_txt, img:"PathFinder.jpg", from: "August 2016", to: "May 2017"},
 ]
 
 let education = [
-    {school: "University of Oslo", degree: "M.Sc.", major: "Programming and System Architecture", from: "2021", to: "2023", gpa: "4.583 / 5.000", img: "card_uio.png"},
-    {school: "University of Pittsburgh", degree: "B.Sc.", major: "Computer Science", from: "2018", to: "2021", gpa: "3.755 / 4.000", img: "icon_pitt.png"},
-    {school: "Community College of Allegheny County", degree: "N/A", major: "N/A", from: "2017", to: "2018", gpa: "4.000 / 4.000", img: "icon_ccac.png"},
+    {school: "University of Oslo", degree: "Master of Science", major: "Programming and System Architecture", from: "2021", to: "2023", gpa: "4.583 / 5.000", img: "card_uio.png"},
+    {school: "University of Pittsburgh", degree: "Bachelor of Science", major: "Computer Science", from: "2018", to: "2021", gpa: "3.755 / 4.000", img: "icon_pitt.png"},
+    {school: "Community College of Allegheny County", degree: "N/A", major: "General Classes", from: "2017", to: "2018", gpa: "4.000 / 4.000", img: "icon_ccac.png"},
     {school: "Lambertseter Vidregående Skole", degree: "High School Diploma", major: "Natural Science and Mathmatics Studies", from: "2014", to: "2017", gpa: "3.885 / 6.000", img: "icon_lambertseter.png"},
+]
+
+let experiences = [
+    {
+        title: "Graduate Student Researcher",
+        location: "University of Oslo",
+        time: "January 2022 - June 2023",
+        desc: "Lorem ipsum..."
+    },
+    {
+        title: "Undergraduate Teaching Assistant",
+        location: "University of Pittsburgh",
+        time: "August 2020 - May 2021",
+        desc: "I served as a UTA for two semesters at the University of Pittsburgh. In this position, i was asked to help students with any questions they had about the class or any assignments. Additionally, we were asked to proctoring our own classes and handle any additional work that was associated with this. This includes creating solutions to lab assignments, create problems for the students to solve, and more."
+    },
+    {
+        title: "Undergraduate Student Researcher",
+        location: "University of Pittsburgh",
+        time: "May 2020 - December 2020",
+        desc: "I compleated my capstone project under the supervision of Professor Brusilovsky at the University of Pittsburgh. In this project, I was tasked with the back-end and front-end development for their student analytics dashboard. I worked closely with PhD Student Jordan Barria-Pineda with finding the most optimal way of displaying data to the user for the interactive dashboard which was to be displayed to the user of the application. In this project, I was able to put my knowledge of programming and CS into work, creating this application from scratch (outisde an already established database). In this project, I creating an application using REST-API that connected their database to the back-end, which then would pass the processed data to the front-end. By the end of 2020, all Professors associated with the project agreed that my work was worth the highest grade."
+    },
 ]
