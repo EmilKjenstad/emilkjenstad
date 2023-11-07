@@ -1,3 +1,22 @@
+/* PARALAX */
+.parallax-testimonials {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75)), url("../assets/img/landing.png");
+}
+
+.parallax-bio {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/card_uio.png");
+}
+
+.parallax-bio,
+.parallax-testimonials
+ {
+  min-height: auto; /* Set a specific height */
+  background-attachment: fixed; /* control the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .contact-card {
   width: auto;
 }
@@ -83,16 +102,7 @@
   display: block;
 }
 
-.parallax {
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.25)), url("../assets/img/card_uio.png");
 
-  min-height: auto; /* Set a specific height */
-
-  background-attachment: fixed; /* control the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .page-section h1 {
   margin-top: 0;
@@ -130,6 +140,7 @@
 
 /* HEADER */
 header.masthead {
+  border-bottom: solid 1rem var(--bs-primary);
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   color: #fff;

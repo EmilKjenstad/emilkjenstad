@@ -17,20 +17,10 @@
 
     <title>Emil Kjenstad</title>
   </head>
-  <body class="bg-light" data-bs-target="#scrollspy-nav">
-
-    <!-- LANDING -->
-    <header id="sectionLanding" class="masthead">
-        <div class="container">
-          <p class="masthead-subheading">&mdash; Hello</p>
-          <p class="masthead-heading text-uppercase">I'm <span class="text-primary">Emil</span> Kjenstad</p>
-          <p class="masthead-subheading fs-5">I am a Computer Scientist with origins from Norway and the United States of America.</p>
-          <a class="text-primary text-decoration-none" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
-        </div>
-    </header>
+  <body class="bg-light" data-bs-spy="scroll" data-bs-target="#scrollspy-nav">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3" id="scrollspy-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3" id="scrollspy-nav">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,8 +39,18 @@
       </div>
     </nav>
 
+    <!-- LANDING -->
+    <header id="sectionLanding" class="masthead">
+        <div class="container">
+          <p class="masthead-subheading">&mdash; Hello</p>
+          <p class="masthead-heading text-uppercase">I'm <span class="text-primary">Emil</span> Kjenstad</p>
+          <p class="masthead-subheading fs-5">I am a Computer Scientist with origins from Norway and the United States of America.</p>
+          <a class="text-primary text-decoration-none" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
+        </div>
+    </header>
+
     <!-- BIOGAPHRY -->
-    <section class="page-section parallax container-fluid" id="sectionBio">
+    <section class="page-section parallax-bio container-fluid" id="sectionBio">
 
       <div id="bio_container">
         <h1 class="text-uppercase mb-5">biography</h1>
@@ -88,7 +88,7 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="page-section container-fluid bg-white shadow-lg mb-5 rounded" id="sectionEducation">
+    <section class="page-section container-fluid bg-white shadow-lg my-5 rounded" id="sectionEducation">
       <div class="container p-5">
         <h1 class="text-uppercase">Education</h1>
 
@@ -97,7 +97,7 @@
     </section>
 
     <!-- PUBLICATIONS -->
-    <section class="page-section container-fluid bg-white shadow-lg mb-5 p-5 rounded" id="sectionPublication">
+    <section class="page-section container-fluid my-5" id="sectionPublication">
       <div class="container">
 
         <h1 class="text-uppercase">Publications</h1>
@@ -105,12 +105,12 @@
       </div>
     </section>
 
-    <!-- CONTACT and Quote-->
-    <section class="page-section container-fluid" id="sectionContact">
+    <!-- CONTACT -->
+    <section class="page-section container-fluid bg-white shadow-lg p-5 rounded" id="sectionContact">
       
       <div class="container">
         
-        <div class="contact-card mx-auto shadow-lg p-3 mb-5 rounded">
+        <div class="contact-card mx-auto  p-3 mb-5 rounded">
           <div class="card-body text-center">
 
             <div class="row">
@@ -142,61 +142,95 @@
 
         </div>
 
-        <div class="row mb-5">
-
-          <div class="col-lg-6 mb-3">
-            <div class="card">
-              <div class="card-header">
-                Quote
-              </div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <p>
-                    As Emil's advisor, I enjoyed very much working with him. He was part of a small team that achieved much in the short time of a master's thesis. Besides being a really good coder, as well as an excellent writer and presenter, he has a skill that is too rare among computer scientists: he can take the long view on a project, plan time very well (not only for himself but together with a team), assess realistically the challenge level that problems pose, and find the best way to solve them on time. Another great skill for a researcher, and I guess other business, is that he finds the hidden gems in research results and sees their value.
-                  </p>
-                  <footer class="blockquote-footer">Carsten Griwodz</footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mb-3">
-            <div class="card">
-              <div class="card-header">
-                Quote
-              </div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <p>
-                    I worked with Emil during my masters thesis at the Institute for Informatics, University of Oslo. Emil is a great person to work with, since he has a good set of critical thinking skills, which is especially useful when it comes to research design. Not only helpful to iron out problems with my own research method, but also to improve his own methodologies and design. In addition to this, he has a good understanding of mathematics, and the skills to apply them when programming features to be implemented into the research project I worked alongside him with. Lastly, a very good "peoples" person. Typically being the first to reach out on his own to organize and plan ahead with other students and faculty so that things move along smoothly.
-                  </p>
-                  <footer class="blockquote-footer">Rahel Gaeb</footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mb-3">
-            <div class="card">
-              <div class="card-header">Quote</div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <p>The effort given by the Instructor and the TA, Emil. With everything going with class in the world they are patient with us students and are doing all they can to keep it as engaging and instructive as possible.</p>
-                  <footer class="blockquote-footer">Anonymous student at <cite title="Source Title">the University of Pittsburgh</cite></footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
       </div>
 
     </section>
 
+    <!-- TESTIMONIALS -->
+    <section class="page-section p-5 container-fluid" id="sectionTestimonials">
+
+      <div class="container">
+
+        <h1>Testimonials</h1>
+
+        <hr class="divider">
+
+        <div class="row">
+          
+          <div class="col-1">
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          </div>
+
+          <div class="col-10">
+            <div id="testimonialsCarusel" class="carousel slide" data-bs-ride="carousel">
+  
+              <div class="carousel-inner">
+    
+                <div class="carousel-item active">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>
+                      As Emil's advisor, I enjoyed very much working with him. He was part of a small team that achieved much in the short time of a master's thesis. Besides being a really good coder, as well as an excellent writer and presenter, he has a skill that is too rare among computer scientists: he can take the long view on a project, plan time very well (not only for himself but together with a team), assess realistically the challenge level that problems pose, and find the best way to solve them on time. Another great skill for a researcher, and I guess other business, is that he finds the hidden gems in research results and sees their value.
+                    </p>
+                    <footer class="blockquote-footer">Carsten Griwodz, <cite title="Source Title">University of Oslo</cite></footer>
+                  </blockquote>
+
+                </div>
+    
+                <div class="carousel-item">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>
+                      I worked with Emil during my masters thesis at the Institute for Informatics, University of Oslo. Emil is a great person to work with, since he has a good set of critical thinking skills, which is especially useful when it comes to research design. Not only helpful to iron out problems with my own research method, but also to improve his own methodologies and design. In addition to this, he has a good understanding of mathematics, and the skills to apply them when programming features to be implemented into the research project I worked alongside him with. Lastly, a very good "peoples" person. Typically being the first to reach out on his own to organize and plan ahead with other students and faculty so that things move along smoothly.
+                    </p>
+                    <footer class="blockquote-footer">Rahel Gaeb, <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+
+                </div>
+    
+                <div class="carousel-item">
+
+                  <h3>Workshop Participant</h3>
+                  <blockquote class="blockquote text-center">
+                    <p>The effort given by the Instructor and the TA, Emil. With everything going with class in the world they are patient with us students and are doing all they can to keep it as engaging and instructive as possible.</p>
+                    <footer class="blockquote-footer">
+                      Anonymous student at <cite title="Source Title">the University of Pittsburgh</cite>
+                    </footer>
+                  </blockquote>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+            </div>
+  
+          </div>
+          <div class="col-1">
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+
     <!-- FOOTER -->
-    <footer class="footer bg-dark text-white">
+    <footer class="footer bg-primary text-white">
         <div class="container">Designed and created by Emil M. Kjenstad</div>
     </footer>
 
