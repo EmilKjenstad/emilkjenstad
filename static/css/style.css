@@ -1,3 +1,21 @@
+section:nth-child(even) {
+  /*background-color: var(--bs-primary);*/
+}
+
+.fill-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+.text-justify {
+  text-align: justify;
+}
 /* PARALAX */
 .parallax-testimonials {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75)), url("../assets/img/landing.png");
@@ -38,10 +56,6 @@
 }
 
 #bio_container {
-  padding: 5vw;
-  width: 75vw;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .bio_entry {
@@ -143,8 +157,8 @@ header.masthead {
   border-bottom: solid 1rem var(--bs-primary);
   padding-top: 10.5rem;
   padding-bottom: 6rem;
-  color: #fff;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.25)), url("../assets/img/landing.png");
+  color: #000000;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/img/landing_1.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: right center;

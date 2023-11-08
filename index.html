@@ -30,8 +30,6 @@
           <ul class="nav nav-pills"> <!-- time line somewhere-->
             <li><a class="nav-link" href="#sectionBio">Biography</a></li>
             <li><a class="nav-link" href="#sectionProject">Projects</a></li>
-            <li><a class="nav-link" href="#sectionExperience">Experience</a></li>
-            <li><a class="nav-link" href="#sectionEducation">Education</a></li>
             <li><a class="nav-link" href="#sectionPublication">Publications</a></li>
             <li><a class="nav-link" href="#sectionContact">Contact</a></li>
           </ul>
@@ -41,18 +39,25 @@
 
     <!-- LANDING -->
     <header id="sectionLanding" class="masthead">
-        <div class="container">
-          <p class="masthead-subheading">&mdash; Hello</p>
-          <p class="masthead-heading text-uppercase">I'm <span class="text-primary">Emil</span> Kjenstad</p>
-          <p class="masthead-subheading fs-5">I am a Computer Scientist with origins from Norway and the United States of America.</p>
-          <a class="text-primary text-decoration-none" target="blank" href="https://drive.google.com/file/d/1uRx5PvB9_pFY1LvJFTzqSkOGcQm0eKx3/view?usp=sharing">Check out my Resume ></a>
+        <div class="container-fluid">
+
+          <div class="row justify-content-around">
+            <div class="col-4">
+              <p class="masthead-subheading">&mdash; Hello</p>
+              <p class="masthead-heading text-uppercase">I'm <span class="text-primary">Emil</span> Kjenstad</p>
+            </div>
+            <div class="col-4">
+              <p class="masthead-subheading fs-5">I am a Computer Scientist with origins from Norway and the United States of America.</p>
+
+            </div>
+          </div>
         </div>
     </header>
 
     <!-- BIOGAPHRY -->
-    <section class="page-section parallax-bio container-fluid" id="sectionBio">
+    <section class="page-section" id="sectionBio">
 
-      <div id="bio_container">
+      <div id="bio_container" class="container">
         <h1 class="text-uppercase mb-5">biography</h1>
         <p>
           Hello,
@@ -69,45 +74,77 @@
         <p>
           Emil Magnar Kjenstad
         </p>
-        
 
       </div>
 
     </section>
 
     <!-- PROJECTS -->
-    <section class="page-section container-fluid bg-white shadow-lg mb-5 p-5 rounded" id="sectionProject">
-      <h1 class="text-uppercase">Projects</h1>
-      <div id="content_projects" class="row row-cols-1 row-cols-md-3 g-4"></div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="page-section pb-3" id="sectionExperience">
-      <h1 class="text-uppercase">Experience</h1>
-      <div id="timeline_content" class="timeline"></div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="page-section container-fluid bg-white shadow-lg my-5 rounded" id="sectionEducation">
-      <div class="container p-5">
-        <h1 class="text-uppercase">Education</h1>
-
-        <div id="education_content" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-4"></div>
+    <section class="page-section" id="sectionProject">
+      <div class="container">
+        <h1 class="text-uppercase">Projects</h1>
+        <div id="content_projects" class="row row-cols-1 row-cols-md-3 g-4"></div>
       </div>
     </section>
 
     <!-- PUBLICATIONS -->
     <section class="page-section container-fluid my-5" id="sectionPublication">
       <div class="container">
-
         <h1 class="text-uppercase">Publications</h1>
-        <div class="accordion " id="accordionExample"></div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="static/assets/img/MoP.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Master of Puppets - How to trick the human mind to explore an infinite world
+                    </h5>
+                    <p class="card-text card-body-content text-justify">
+                      Virtual reality is a simulation of a threedimensional environment with which we can interact as if it were the real environment. With this technology, users can disconnect themselves from the real environment and enjoy a computer-generated world that seems real. This comes with some flaws, however. For example, a user often employs a joystick or omni-directional treadmill to move around in the virtual environment. Many experience this as either an unnatural form of movement that disconnects us from the virtual world or to be expensive and may not be affordable for everyone. An inexpensive solution that feels natural is therefore desired. The most natural form of movement would be walking, but even this has its limitations since issues such as unknowingly walking into walls or other objects can become significant safety risks in the real environment. Moreover, movement in the virtual environment would be limited to what we have available in the real environment because movements are mapped between the virtual and physical environments as 1:1 — whatever you do in the real environment, you do in the virtual environment.
+                      Redirected walking is a term used to describe the remapping of position and orientation between the real environment and the virtual environment. If this is done correctly, we can expand the available area in which we can explore a virtual environment. This is done by manipulating human senses to make a person perceive their movements in the virtual environment as ones they are performing in the real environment. We can achieve this by manipulating the camera in the virtual environment by injecting unnoticeable movements that redirect the user. We have emphasized three known methods of redirection in our research, namely, translation, rotation, and curvature. Our aim was to explore the extent to which redirected walking is achievable in various situations without it becoming noticed by users.
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-type="publication" data-id="0">See more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="static/assets/img/mmve.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Experiencing Rotation and Curvature Gain for Redirected Walking in Virtual Reality
+                    </h5>
+                    <p class="card-text card-body-content text-justify">
+                      The proliferation of virtual reality (VR) interaction in the wake of the Metaverse trend will place an increasing number of applications and services into virtual environments (VEs). Over the recent years, interactions with the VE have been studied intensely, but very frequently, such interactions are focused on stationary users or users who leverage specialized contraptions to act in the VE (e.g., omni-directional treadmills). The free movement in the VE tends to be achieved by controller input, which creates a huge hurdle to enter and act in it in a natural manner. The target of this study is the translation of the natural walking motion from the real environment (RE) into the VE. In particular, we aim to explore to which extent redirected walking (RW) is achievable without being noticed by the users. Towards this goal, we test two RW methods, i.e., rotation gain and curvature gain. According to the responses of the participants in our study, we find that there is a statistically significant difference with 90% confidence between the levels of gains for rotation gain. On the other hand, levels of gains for curvature gain are not noticeable (i.e., no statistically significant difference is observed).
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-type="publication" data-id="1">See more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="page-section container-fluid bg-white shadow-lg p-5 rounded" id="sectionContact">
-      
+    <section class="page-section container-fluid" id="sectionContact">
+  
       <div class="container">
         
         <div class="contact-card mx-auto  p-3 mb-5 rounded">
@@ -145,6 +182,7 @@
       </div>
 
     </section>
+    
 
     <!-- TESTIMONIALS -->
     <section class="page-section p-5 container-fluid" id="sectionTestimonials">
@@ -171,7 +209,7 @@
     
                 <div class="carousel-item active">
 
-                  <h3>Workshop Participant</h3>
+                  <h3>Reccomendation</h3>
                   <blockquote class="blockquote text-center">
                     <p>
                       As Emil's advisor, I enjoyed very much working with him. He was part of a small team that achieved much in the short time of a master's thesis. Besides being a really good coder, as well as an excellent writer and presenter, he has a skill that is too rare among computer scientists: he can take the long view on a project, plan time very well (not only for himself but together with a team), assess realistically the challenge level that problems pose, and find the best way to solve them on time. Another great skill for a researcher, and I guess other business, is that he finds the hidden gems in research results and sees their value.
@@ -183,7 +221,7 @@
     
                 <div class="carousel-item">
 
-                  <h3>Workshop Participant</h3>
+                  <h3>Reccomendation</h3>
                   <blockquote class="blockquote text-center">
                     <p>
                       I worked with Emil during my masters thesis at the Institute for Informatics, University of Oslo. Emil is a great person to work with, since he has a good set of critical thinking skills, which is especially useful when it comes to research design. Not only helpful to iron out problems with my own research method, but also to improve his own methodologies and design. In addition to this, he has a good understanding of mathematics, and the skills to apply them when programming features to be implemented into the research project I worked alongside him with. Lastly, a very good "peoples" person. Typically being the first to reach out on his own to organize and plan ahead with other students and faculty so that things move along smoothly.
@@ -195,7 +233,7 @@
     
                 <div class="carousel-item">
 
-                  <h3>Workshop Participant</h3>
+                  <h3>Midterm Survay</h3>
                   <blockquote class="blockquote text-center">
                     <p>The effort given by the Instructor and the TA, Emil. With everything going with class in the world they are patient with us students and are doing all they can to keep it as engaging and instructive as possible.</p>
                     <footer class="blockquote-footer">
@@ -243,10 +281,9 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-              <img id="model_image">
             <div id="modal_content"></div>
           </div>
-          <div class="modal-footer">
+          <div id="modal_footer" class="modal-footer">
             <i class="text-muted">More info comming soon</i>
             <!--
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

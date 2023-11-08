@@ -32,9 +32,9 @@ function navCheck() {
 window.onload = function () {
   navCheck()
     populateProjects();
-    populateEducation();
-    populatePublications();
-    populateExperience();
+    //populateEducation();
+    //populatePublications();
+    //populateExperience();
 }
 
 function populateEducation() {
@@ -81,15 +81,15 @@ function populateProjects() {
 
     let project = `
     <div class="col">
-      <div class="card">
+      <div class="card h-100 shadow">
         <img src="static/assets/img/`+ projects[i].img +`" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">`+ projects[i].title +`</h5>
           <p class="text-muted">`+ projects[i].from +` - `+ projects[i].to +`</p>
-          <div id="project_content`+i+`" class="card-body-content">`+desc+`</div>
+          <div id="project_content`+i+`" class="card-body-content text-justify">`+desc+`</div>
         </div>
         <div class="card-footer">
-          <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="`+i+`">See more</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="`+i+`">See more</button>
         </div>
       </div>
     </div>
@@ -160,13 +160,19 @@ function populateExperience() {
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
   var button = event.relatedTarget // Button that triggered the modal
+
+  var data_type = button.getAttribute('data-type') // Extract info from data-bs-* attributes
   var id = button.getAttribute('data-id') // Extract info from data-bs-* attributes
-  var project = projects[id];
   
+  var project = projects[id];
+  if (data_type == "publication") {
+    project = publications[id];
+  }
+
   // Update the modal's content.
   var modalTitle = exampleModal.querySelector('#exampleModalLabel')
   var modalBodyInput = exampleModal.querySelector('#modal_content')
-  var modalImage = exampleModal.querySelector('#model_image')
+  var modalFooter = exampleModal.querySelector('#modal_footer')
 
   let lines = project.text.split("\n");
   var content = "";
@@ -176,10 +182,19 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
     content += line;
     content += '</p>'
   });
+
   var title = "";
   title += '<h5 class="modal-title">'+project.title+'</h5>';
-  title += '<small class="text-muted">'+project.from+' - '+project.to+'</small>';
-  //modalImage.src = "static/assets/img/"+project.img;
+  
+  var footer = "";
+  if ( data_type == "publication") {
+    footer = '<a href="`+publications[i].link+`" target="blank" type="button" class="btn btn-outline-secondary">View Publication</a>';
+  } else {
+    title += '<small class="text-muted">'+project.from+' - '+project.to+'</small>';
+    footer = '<i class="text-muted">More info comming soon</i>'
+  }
+
   modalTitle.innerHTML = title;
   modalBodyInput.innerHTML = content;
+  modalFooter.innerHTML = footer;
 })

@@ -47,7 +47,8 @@
 body {
   position: relative;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  /*font-family: var(--bs-font-sans-serif);*/
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4303,8 +4304,7 @@ textarea.form-control-lg {
 
 .card-footer {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgb(0, 0, 0, 0);
 }
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
